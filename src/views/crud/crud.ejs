@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <form action="crud/createUser" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input name="password" type="password" class="form-control" id="inputPassword4"
+                            placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">firstName</label>
+                    <input name="firstName" type="text" class="form-control" id="inputAddress" placeholder="ho van a">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">lastName</label>
+                    <input name="lastName" type="text" class="form-control" id="inputAddress2"
+                        placeholder="phat ... vv">
+                </div>
+                <div class="form-group">
+                    <label for="inputCity">address</label>
+                    <input name="address" type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputZip">phoneNumber</label>
+                        <input name="phoneNumber" type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputState">gender</label>
+                        <select name="gender" id="inputState" class="form-control">
+                            <option selected value="1">Nam</option>
+                            <option value="0">NU</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="inputState">RoleId</label>
+                        <select name="RoleId" id="inputState" class="form-control">
+                            <option selected value="R1">Admin</option>
+                            <option value="R2">Doctor</option>
+                            <option value="R3">Patient</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="">
+                <a href="crud/displayUser" class="btn btn-outline-primary"> see all user </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
